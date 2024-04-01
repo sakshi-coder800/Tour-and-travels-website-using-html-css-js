@@ -660,3 +660,67 @@ header nav .right .ul_active {
     height: fit-content;
 }
 }
+
+@media screen and (max-width: 650px) {
+
+
+    .destination {
+        margin: 1rem auto;
+        width: 95%;
+    }
+    .section {
+        width: 100%;
+        /* border: 1px solid #000; */
+        margin: 300px auto 0 auto;
+    }
+    .packages {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        /* width: 100%; */
+    }
+    .main-heading {
+        padding: 4rem 0 2rem 0;
+    }
+
+.country-packages {
+    width: 40%;}
+    }
+
+
+
+
+
+@media screen and (max-width: 400px) {
+
+    .search_bx .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .country-packages {
+        width: 100%;
+    }
+    .footer-section {
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+    .destination {
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .left-destination-details {
+        width: 100%;
+        padding: 0 20px !important;
+    }
+    .right-destination-img {
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .content .trip-bx {
+        bottom: -940px;
+        width: 96%;
+    }
+}
