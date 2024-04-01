@@ -1,41 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tour And Travels Website  using html css javascript</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-<!-- header section  -->
-<header>
-    <nav>
-        <div class="left"> 
-            <h3>MR.Travel</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tour And Travels Website using html css javascript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <nav>
+        <div class="left">
+          <h3>MR.Travel</h3>
         </div>
         <div class="right">
-            <ul>
-                <li><a href="#"> Discover     </a></li>
-                <li><a href="#"> Community     </a></li>
-                <li><a href="#"> Special Deals    </a> </li>
-                <li><a href="#"> About US    </a> </li>
-                <button class="main-btn">Register</button>
-            </ul>
+          <ul>
+            <li><a href="#"> Discover </a></li>
+            <li><a href="#"> Community </a></li>
+            <li><a href="#"> Special Deals </a></li>
+            <li><a href="#"> About US </a></li>
+            <button class="main-btn">Register</button>
+          </ul>
         </div>
         <i class="fa-solid fa-bars mobile-btn"></i>
-    </nav>
+      </nav>
+      <div class="content">
+        <div class="conn">
+          <h2>The right destination for you and your family</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem,
+            ratione!
+          </p>
+          <button class="main-btn">Start your Search</button>
+        </div>
+        <div class="trip-bx">
+            <h4>Countries to Travel</h4>
+          <div class="location-search">
+            <!-- <i class="fa-solid fa-circle-chevron-up"></i> -->
+            <div class="card">
+              <div class="card-header-location">
+                <p class="main-head">Location</p>
+                <i class="fa-solid rotate-icon fa-circle-chevron-up"></i>
+              </div>
+              <div class="card-data">
+                <input type="text" placeholder="Dubai" />
+              </div>
+            </div>
 
+            <div class="card">
+              <div class="card-header-location">
+                <p class="main-head">Date</p>
+                <i class="fa-solid rotate-icon fa-circle-chevron-up"></i>
+              </div>
+              <div class="card-data"><input type="date" name="" id="" /></div>
+            </div>
 
+            <div class="card">
+              <div class="card-header-location">
+                <p class="main-head">People</p>
+                <i class="fa-solid rotate-icon fa-circle-chevron-up"></i>
+              </div>
+              <div class="card-data">
+                <input type="text" placeholder="113" name="" id="" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header-location">
+                <button class="main-btn">Explore Now</button>
+              </div>
+            </div>
+          </div>
 
+          <div class="search_bx">
+            <div class="card">
+              <!-- <div class="card-body"> -->
+              <div class="card-header">
+                <div class="stateName">India</div>
+                <div class="state-icon">
+                  <img
+                    src="data:image/jpeg;base64,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"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card-body">
+                <img
+                  src="https://www.godigit.com/content/dam/godigit/directportal/en/best-places-to-visit-in-united-kingdom.jpg"
+                  alt=""
+                  class="card-img"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div class="card-footer">
+                <button class="main-btn">Read More</button>
+                <div class="details">
+                  <p class="city-name">Mumbai</p>
+                  <p class="city-price">$40</p>
+                </div>
+              </div>
+            </div>
 
-    <div class="hero-content">
-        
+            <!-- card 2  -->
+            <div class="card">
+              <div class="card-header">
+                <div class="stateName">India</div>
+                <div class="state-icon"><img src="" alt="" /></div>
+              </div>
+              <div class="card-body">
+                <img
+                  src="https://adm.dookinternational.com/dook/images/country/XYwKYrjh1656324286.jpg"
+                  alt=""
+                  class="card-img"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div class="card-footer">
+                <button class="main-btn">Read More</button>
+                <div class="details">
+                  <p class="city-name">Mumbai</p>
+                  <p class="city-price">$40</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 3  -->
+            <div class="card">
+              <div class="card-header">
+                <div class="stateName">India</div>
+                <div class="state-icon"><img src="" alt="" /></div>
+              </div>
+              <div class="card-body">
+                <img
+                  src="
+                                https://i.insider.com/5c8964c62730ca70541d9441?width=1136&format=jpeg"
+                  alt=""
+                  class="card-img"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div class="card-footer">
+                <button class="main-btn">Read More</button>
+                <div class="details">
+                  <p class="city-name">Mumbai</p>
+                  <p class="city-price">$40</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 4  -->
+            <div class="card">
+              <div class="card-header">
+                <div class="stateName">India</div>
+                <div class="state-icon"><img src="" alt="" /></div>
+              </div>
+              <div class="card-body">
+                <img
+                  src="https://media1.thrillophilia.com/filestore/4y42ry4z4lx7y5wsvvo4g4xwfv2u_1580212251_london_tower1.jpg?w=305&h=230&dpr"
+                  alt=""
+                  class="card-img"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div class="card-footer">
+                <button class="main-btn">Read More</button>
+                <div class="details">
+                  <p class="city-name">Mumbai</p>
+                  <p class="city-price">$40</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <!-- card 4  -->
+            <!-- card   -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header section  -->
+
+    <!-- country section start  -->
+    <div class="section">
+      <div class="country-section">
+        <div class="main-heading">
+          <h3>Best tour Package offers for you</h3>
+          <p>choose your next destination</p>
+        </div>
+      <div class="packages">
+        <div class="country-packages">
+            <span class="country-label">Lotus Delhi</span>
+            <i class="fa-solid fa-heart"></i> 
+
+            <div class="country-data">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/LotusDelhi.jpg"
+                alt=""
+                class="country-img"
+              />
+              <div class="country-details">
+                <p>
+                  Included: Air ticket, hotel,Breakfast,Tours, 
+                </p>
+              </div>
+             
+            </div>
+            
+          </div>
+        <div class="country-packages">
+            <span class="country-label">Lotus Delhi</span>
+            <i class="fa-solid fa-heart"></i> 
+
+            <div class="country-data">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/LotusDelhi.jpg"
+                alt=""
+                class="country-img"
+              />
+              <div class="country-details">
+                <p>
+                  Included: Air ticket, hotel,Breakfast,Tours, 
+                </p>
+              </div>
+             
+            </div>
+            
+          </div>
+        <div class="country-packages">
+            <span class="country-label">Lotus Delhi</span>
+            <i class="fa-solid fa-heart"></i> 
+
+            <div class="country-data">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/LotusDelhi.jpg"
+                alt=""
+                class="country-img"
+              />
+              <div class="country-details">
+                <p>
+                  Included: Air ticket, hotel,Breakfast,Tours, 
+                </p>
+              </div>
+             
+            </div>
+            
+          </div>
+        <div class="country-packages">
+            <span class="country-label">Lotus Delhi</span>
+            <i class="fa-solid fa-heart"></i> 
+
+            <div class="country-data">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/LotusDelhi.jpg"
+                alt=""
+                class="country-img"
+              />
+              <div class="country-details">
+                <p>
+                  Included: Air ticket, hotel,Breakfast,Tours, 
+                </p>
+              </div>
+             
+            </div>
+            
+          </div>
+         
+      </div>
+      </div>
+      
     </div>
-</header>
 
-<!-- end header section  -->
-
+    <!-- country section end  -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

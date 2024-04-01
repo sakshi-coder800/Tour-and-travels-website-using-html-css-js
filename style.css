@@ -16,11 +16,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header {
+header  {
   width: 80%;
   height: 95vh;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   margin: 0.5rem auto 0 auto;
+}
+.section{
+    width: 80%;
+    /* border: 1px solid #000; */
+    margin: 9rem auto 0 auto;
+    text-align: center;
 }
 /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 header nav {
@@ -30,7 +36,7 @@ header nav {
   align-items: center;
   height: 7%;
   background-color: #fff;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   margin: auto;
 }
 header nav .right ul {
@@ -62,19 +68,25 @@ header nav .right ul li:hover::before {
   bottom: 0%;
 }
 
+
+
 .main-btn {
-  background: #000;
-  color: #fff;
-  padding: 0.2rem 0.5rem;
-  border-radius: 1rem;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  position: relative;
-  /* transition: 0.4s linear; */
-  overflow: hidden;
-  z-index: 100;
-  border: 1px solid transparent;
+    background: #000;
+    color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
+    /* transition: 0.4s linear; */
+    overflow: hidden;
+    z-index: 100;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    padding: .3rem 1rem;
+    font-weight: 600;
 }
+
+
 .main-btn::after {
   content: "";
   position: absolute;
@@ -112,6 +124,8 @@ header nav .right ul li:hover::before {
   color: #000 !important;
 }
 
+/* main-btn-dark */
+
 .mobile-btn{display: none !important;}
 
 
@@ -121,4 +135,252 @@ header nav .right ul li:hover::before {
 
 
 
+
+header .content{
+    /* border: 1px solid #000; */
+    position: relative;
+    width: 100%; height: 80%;  
+}
+
+header .content::before{
+    content: ''; position: absolute;
+    width: 100%;
+    height: 100%; 
+    /* background:  url("https://img.freepik.com/premium-photo/dark-green-water_1032986-59536.jpg") no-repeat ;  */
+    background:  url("https://img.freepik.com/free-photo/beautiful-sea-ocean-with-cloud-blue-sky_74190-6828.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710288000&semt=ais") no-repeat ; 
+    background-size: 100% 100%;
+    border-radius: 10px; z-index: -1;
+}
+
+header .content .conn{
+    width: 600px; height: auto; color: #fff;
+    /* background-color: red; */
+    padding: 30px;
+}
+header .content .conn h2{
+line-height: 50px; font-weight: 800;
+font-size: 2rem;
+padding: 1rem 0 ;
+}
+header .content .conn p{
+
+    font-size: 1.2rem;
+
+}
+.conn .main-btn{
+    margin: 1rem 0 ;
+}
+
+
+
+/* trip box start  */
+
+.content .trip-bx {
+    background-color: rgba(207, 207, 207, 0.79);
+    position: absolute;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    bottom: -45%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding: 2rem .5rem;
+}
+.trip-bx h4{ margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+
+
+/* search box start  */
+.search_bx {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.search_bx .card {
+    background: #fff;
+    padding: .2rem .1rem;
+    width: 100%;
+    height: 100%;
+}
+.card .card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem .5rem;
+}
+.card .card-header .stateName {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.card .card-header .state-icon img {height: 20px; width: 20px; object-fit: cover;}
+.card-body {width: 100%;overflow: hidden;}
+
+
+
+.card-body img {
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    object-fit: cover; 
+    /* transition: .4s linear; */
+}
+.card-body:hover img{
+    transform: scale(1.2);
+
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .2rem .5rem;
+}
+.card-footer .main-btn{font-size: 1rem;}
+/* .card-body img{width: 100%; height: 200px; object-fit: cover;} */
+/* search box  */
+
+
+
+
+
+/* location search start  */
+.location-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    width: 75%;
+    margin: .4rem 0;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card .card-header-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    z-index: 100 !important
+}
+.card-header-location p.main-head {
+    font-size: 1rem;
+    font-weight: 600;
+}
+ .card-data input {
+    background: transparent;
+    border: transparent;
+    font-size: .9rem;
+    padding: .3rem 0;
+} 
+ .card-data input:focus {
+        background: transparent;
+        border: transparent;
+        outline: none;
+
+}
+/* location search end */
+
+/* trip box end */
+
+
 /* hero section end */
+
+.main-heading{
+    padding: 3rem 0 ;
+}
+.main-heading h3{
+    font-size: 2rem;
+    font-weight: 600;
+     
+}
+.main-heading p{color: grey;}
+
+
+
+
+/* package section start  */
+
+
+.packages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.country-packages{
+    position: relative;
+    transition: .4s linear;
+}
+span.country-label {
+    background: #00ffa3;
+    color: #000;
+    font-weight: 500;
+    padding: 1rem 0;
+    position: absolute;
+    left: 2px;
+    top: -10px;
+    border-radius: 20px;
+    padding: .5rem;
+    font-size: .9rem;
+    z-index: 100;
+}
+.country-data {
+    width: 100%;
+    overflow: hidden;
+    /* padding: 1rem; */
+    height: 100%;
+    border-radius: 20px;
+}
+
+img.country-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; transition: .4s linear; z-index: -100;
+}
+img.country-img:hover{
+    transform: scale(1.4);
+}
+.country-details {
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(238, 238, 238);
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+}
+
+.country-details p{
+    font-size: .8rem;
+    padding: .2rem .5rem;
+    line-height: 1.3rem;
+    font-weight: 600;}/* package section end */
+
+.fa-heart{
+    color: red;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 22px;
+    top: 21px;
+    z-index: 10;
+}
+.country-packages:hover  .fa-heart{
+    transform: scale(1.3);
+}
+
+
+
